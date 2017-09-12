@@ -12,7 +12,7 @@
   "author": "Anthony Sneed <tony@tonysneed.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/TrackableEntities/observable-entities-js.git"
   },
   "license": "MIT",
   "engines": {
