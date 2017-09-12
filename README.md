@@ -130,4 +130,3 @@ Made with :heart: by [@alexjoverm](https://twitter.com/alexjoverm) and all these
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
-
