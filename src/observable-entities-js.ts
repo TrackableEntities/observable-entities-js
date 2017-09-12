@@ -1,4 +1,2 @@
-// Import here Polyfills if needed. Recommended core-js (npm i -D core-js)
-// import "core-js/fn/array.find"
-// ...
-export default class DummyClass {}
+export { HelloWorld } from './hello-world';
+export { ItalianHelloWorld } from './italian-hello-world';
