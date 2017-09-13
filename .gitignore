@@ -34,7 +34,6 @@ npm-debug.log
 testem.log
 /typings
 yarn-error.log
-coverage
 .nyc_output
 .awcache
 
