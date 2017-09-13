@@ -26,7 +26,6 @@
     "test:watch": "jest --watch",
     "test:prod": "npm run lint && npm run test -- --coverage --no-cache",
     "deploy-docs": "ts-node tools/gh-pages-publish",
-    "report-coverage": "cat ./coverage/lcov.info | coveralls",
     "prepush": "npm run test:prod && npm run build"
   },
   "jest": {
@@ -34,7 +33,9 @@
       ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "modulePathIgnorePatterns": ["models"] ,   
+    "modulePathIgnorePatterns": [
+      "models"
+    ],
     "moduleFileExtensions": [
       "ts",
       "tsx",
@@ -52,7 +53,6 @@
     "@types/node": "^8.0.0",
     "codelyzer": "^3.2.0",
     "colors": "^1.1.2",
-    "coveralls": "^2.13.1",
     "cross-env": "^5.0.1",
     "husky": "^0.14.0",
     "jest": "^21.0.0",
