@@ -3,7 +3,8 @@
   "version": "0.0.0-development",
   "description": "",
   "keywords": [],
-  "module": "dist/observable-entities-js.js",
+  "main": "dist/observable-entities-js.umd.js",
+  "module": "dist/observable-entities-js.es2015.js",
   "typings": "dist/types/observable-entities-js.d.ts",
   "files": [
     "dist"
