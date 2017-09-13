@@ -18,7 +18,7 @@
     "node": ">=6.0.0"
   },
   "scripts": {
-    "lint": "tslint --type-check -p tsconfig.json codeFrame 'src/**/*.ts'",
+    "lint": "tslint --type-check -p 'tsconfig.json' codeFrame 'src/**/*.ts'",
     "prebuild": "rimraf dist",
     "build": "tsc && rollup -c && rimraf compiled && typedoc --out dist/docs --target es6 --theme minimal --exclude '**/*.spec.ts' src",
     "start": "tsc-watch --onSuccess \"rollup -c\"",
@@ -34,6 +34,7 @@
       ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "modulePathIgnorePatterns": ["models"] ,   
     "moduleFileExtensions": [
       "ts",
       "tsx",
@@ -42,15 +43,7 @@
     "coveragePathIgnorePatterns": [
       "/node_modules/",
       "/test/"
-    ],
-    "coverageThreshold": {
-      "global": {
-        "branches": 90,
-        "functions": 95,
-        "lines": 95,
-        "statements": 95
-      }
-    }
+    ]
   },
   "devDependencies": {
     "@angular/compiler": "^4.3.6",
@@ -75,9 +68,12 @@
     "ts-jest": "^21.0.0",
     "ts-node": "^3.0.6",
     "tsc-watch": "^1.0.5",
-    "tslint": "^5.4.3",
+    "tslint": "^5.7.0",
     "typedoc": "^0.7.1",
-    "typescript": "^2.3.4",
+    "typescript": "^2.5.2",
     "zone.js": "^0.8.17"
+  },
+  "dependencies": {
+    "rxjs": "^5.4.3"
   }
 }
