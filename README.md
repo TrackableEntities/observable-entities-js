@@ -9,6 +9,9 @@ Docs: <https://trackableentities.github.io/observable-entities-js>
 
 Sample application: <https://github.com/TrackableEntities/observable-entities-js-sample>
 
+> Note: You must change the TypeScript compiler target to "es2015" in **ts.config.json**.
+> - Apps using observable-entities can support most modern browsers (Chrome, Firefox, Safari, Edge, etc), but they will not be able to support legacy browsers (Internet Explorer).
+
 ## Setup
 
 Install **observable-entities** as a runtime dependency from npm.
