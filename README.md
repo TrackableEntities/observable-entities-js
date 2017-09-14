@@ -1,6 +1,6 @@
 # observable-entities-js
 
-Classes that accept listeners for setting properties and adding / removing objects from collections.
+Base classes that notify observers when properties are updated and objects are added or removed objects from collections.
 
 [![Build Status](https://travis-ci.org/TrackableEntities/observable-entities-js.svg?branch=master)](https://travis-ci.org/TrackableEntities/observable-entities-js)
 [![npm version](https://badge.fury.io/js/observable-entities-js.svg)](https://badge.fury.io/js/observable-entities-js)
@@ -11,11 +11,9 @@ Sample application: <https://github.com/TrackableEntities/observable-entities-js
 
 ## Usage
 
-To observe property changes on an object, create a class that extends `ObservableEntity`. Then add a `constructor` that returns `super.proxify(this)`.  For example
+To observe property changes on an object, create a class that extends `ObservableEntity`. Then add a `constructor` that returns `super.proxify(this)`.  For example:
 
 ```js
-import { ObservableEntity } from 'observable-entities-js';
-
 export class Product extends ObservableEntity {
   productId: number;
   productName: string;
