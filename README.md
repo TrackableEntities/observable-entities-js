@@ -9,6 +9,14 @@ Docs: <https://trackableentities.github.io/observable-entities-js>
 
 Sample application: <https://github.com/TrackableEntities/observable-entities-js-sample>
 
+## Setup
+
+Install **observable-entities** as a runtime dependency from npm.
+
+```
+npm i --save observable-entities
+```
+
 ## Usage
 
 To observe property changes on an object, create a class that extends `ObservableEntity`. Then add a `constructor` that returns `super.proxify(this)`.  For example:
