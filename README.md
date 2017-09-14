@@ -2,8 +2,8 @@
 
 Base classes that notify observers when properties are updated and objects are added or removed objects from collections.
 
-[![Build Status](https://travis-ci.org/TrackableEntities/observable-entities-js.svg?branch=master)](https://travis-ci.org/TrackableEntities/observable-entities-js)
-[![npm version](https://badge.fury.io/js/observable-entities-js.svg)](https://badge.fury.io/js/observable-entities-js)
+[![Build Status](https://travis-ci.org/TrackableEntities/observable-entities-js.svg?branch=master)](https://travis-ci.org/TrackableEntities/observable-entities)
+[![npm version](https://badge.fury.io/js/observable-entities.svg)](https://badge.fury.io/js/observable-entities)
 
 Docs: <https://trackableentities.github.io/observable-entities-js>
 
