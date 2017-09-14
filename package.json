@@ -1,11 +1,18 @@
 {
-  "name": "observable-entities-js",
-  "version": "1.0.0-beta2",
-  "description": "",
-  "keywords": [],
-  "main": "dist/observable-entities-js.umd.js",
-  "module": "dist/observable-entities-js.es2015.js",
-  "typings": "dist/types/observable-entities-js.d.ts",
+  "name": "observable-entities",
+  "version": "1.0.0-alpha.1",
+  "description": "Base classes that notify observers when properties are updated and objects are added or removed objects from collections.",
+  "keywords": [
+    "change-tracking",
+    "observables",
+    "proxies",
+    "set",
+    "map",
+    "angular"
+  ],
+  "main": "dist/observable-entities.umd.js",
+  "module": "dist/observable-entities.es2015.js",
+  "typings": "dist/types/observable-entities.d.ts",
   "files": [
     "dist"
   ],
@@ -21,7 +28,7 @@
   "scripts": {
     "lint": "tslint --type-check -p 'tsconfig.json' codeFrame 'src/**/*.ts'",
     "prebuild": "rimraf dist",
-    "build": "tsc && rollup -c && rimraf compiled && typedoc --out dist/docs --target es6 --theme minimal --exclude '**/*.spec.ts' src",
+    "build": "tsc && rollup -c && rimraf compiled && typedoc --out dist/docs --target es6 --theme minimal --exclude '**/*.spec.ts' --mode modules src",
     "start": "tsc-watch --onSuccess \"rollup -c\"",
     "test": "jest",
     "test:watch": "jest --watch",
