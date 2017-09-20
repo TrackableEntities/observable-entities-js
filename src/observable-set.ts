@@ -34,7 +34,6 @@ export class ObservableSet<TEntity> extends Set<TEntity> implements IObservableC
    * @memberof ObservableSet
    */
   get addListeners(): Subject<INotifyInfo>[] {
-    const x = new Set<string>();
     return this._addListeners;
   }
 
