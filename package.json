@@ -1,7 +1,7 @@
 {
   "name": "observable-entities",
   "version": "1.0.0-beta.1",
-  "description": "Base classes that notify observers when properties are updated and objects are added or removed objects from collections.",
+  "description": "Base classes that notify observers when properties are updated and objects are added or removed from collections.",
   "keywords": [
     "change-tracking",
     "observables",
