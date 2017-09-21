@@ -61,6 +61,15 @@ this.addListener.subscribe(info => {
   this.cd.markForCheck();
 });
 
-// Add listenter to products
+// Add listener for adds
 this.products.addListeners.push(this.addListener);
+
+// Trigger data binding when item is removed
+this.removeListener = new Subject<INotifyInfo>();
+this.removeListener.subscribe(info => {
+  this.cd.markForCheck();
+});
+
+// Add listener for deletes
+this.products.removeListeners.push(this.removeListener);
 ```
