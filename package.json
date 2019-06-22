@@ -23,6 +23,10 @@
     "node": ">=8.5",
     "npm": ">=6.0"
   },
+  "files": [
+    "dist/bundles",
+    "dist/types"
+  ],
   "scripts": {
     "lint": "tslint -p 'tsconfig.json' 'src/**/*.ts'",
     "prebuild": "rimraf dist",
@@ -35,7 +39,7 @@
     "prepush": "npm run test:prod && npm run build"
   },
   "dependencies": {
-    "rxjs": "^6.5.2"
+    "rxjs": "~6.4.0"
   },
   "peerDependencies": {
     "tslib": ">=1.9.0"
