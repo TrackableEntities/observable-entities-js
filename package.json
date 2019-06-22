@@ -1,6 +1,6 @@
 {
   "name": "observable-entities",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0",
   "description": "Base classes that notify observers when properties are updated and objects are added or removed from collections.",
   "keywords": [
     "change-tracking",
@@ -10,12 +10,9 @@
     "map",
     "angular"
   ],
-  "main": "dist/observable-entities.umd.js",
-  "module": "dist/observable-entities.es2015.js",
+  "main": "dist/bundles/observable-entities.umd.js",
+  "module": "dist/bundles/observable-entities.es2015.js",
   "typings": "dist/types/observable-entities.d.ts",
-  "files": [
-    "dist"
-  ],
   "author": "Anthony Sneed <tony@tonysneed.com>",
   "repository": {
     "type": "git",
@@ -23,36 +20,19 @@
   },
   "license": "MIT",
   "engines": {
-    "node": ">=6.0.0"
+    "node": ">=8.5",
+    "npm": ">=6.0"
   },
   "scripts": {
     "lint": "tslint --type-check -p 'tsconfig.json' codeFrame 'src/**/*.ts'",
     "prebuild": "rimraf dist",
     "build": "tsc && rollup -c && typedoc --out dist/docs --target es6 --theme minimal --exclude '**/*.spec.ts' --mode modules src",
     "start": "tsc-watch --onSuccess \"rollup -c\"",
-    "test": "jest",
+    "test": "jest -c ./jest.config.js",
     "test:watch": "jest --watch",
     "test:prod": "npm run lint && npm run test -- --coverage --no-cache",
     "deploy-docs": "ts-node tools/gh-pages-publish",
     "prepush": "npm run test:prod && npm run build"
-  },
-  "jest": {
-    "transform": {
-      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-    },
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "modulePathIgnorePatterns": [
-      "models"
-    ],
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      "/test/"
-    ]
   },
   "dependencies": {
     "rxjs": "^6.5.2"
