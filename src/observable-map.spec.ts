@@ -1,4 +1,4 @@
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 
 import { Product } from './models/product.spec';
 import { INotifyInfo } from './notify-info';
