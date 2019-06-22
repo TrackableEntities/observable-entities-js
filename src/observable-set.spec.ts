@@ -1,5 +1,5 @@
 import { INotifyInfo } from './notify-info';
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 
 import { Product } from './models/product.spec';
 import { ObservableSet } from './observable-set';

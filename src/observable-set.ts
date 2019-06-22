@@ -1,4 +1,4 @@
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 
 import { INotifyInfo } from './notify-info';
 import { IObservableCollection } from './observable-collection';
