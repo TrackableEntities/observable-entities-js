@@ -21,7 +21,7 @@
       {
           "label": "test",
           "type": "npm",
-          "script": "test",
+          "script": "test:watch",
           "presentation": {
               "reveal": "always"
           },
