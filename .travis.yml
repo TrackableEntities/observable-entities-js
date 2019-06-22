@@ -10,7 +10,7 @@ cache:
 notifications:
   email: false
 node_js:
-  - '8.5'
+  - '10.16.0'
 before_script:
   - npm prune && npm cache clean
 script:
